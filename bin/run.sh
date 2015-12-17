@@ -32,9 +32,12 @@ fi
 bin/installDeps.sh $* || exit 1
 
 #Move to the node folder and start
-echo "Started Etherpad..."
+echo "Started Etherpad... XXX"
 
+echo "--1"
 SCRIPTPATH=`pwd -P`
+echo "--2"
 echo $SCRIPTPATH
+echo "--3"
 node $SCRIPTPATH/node_modules/ep_etherpad-lite/node/server.js $*
-
+echo "--4"
